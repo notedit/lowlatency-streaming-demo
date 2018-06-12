@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EC774B16C7E0BE1A90C4BDE /* libPods-avlittle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6795066A04A6B646EC689AE7 /* libPods-avlittle.a */; };
+		F016A7BC20CFC4D100CD63B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F016A7BB20CFC4D100CD63B1 /* AppDelegate.m */; };
+		F016A7BF20CFC4D100CD63B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F016A7BE20CFC4D100CD63B1 /* ViewController.m */; };
+		F016A7C220CFC4D100CD63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F016A7C020CFC4D100CD63B1 /* Main.storyboard */; };
+		F016A7C420CFC4D300CD63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F016A7C320CFC4D300CD63B1 /* Assets.xcassets */; };
+		F016A7C720CFC4D300CD63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F016A7C520CFC4D300CD63B1 /* LaunchScreen.storyboard */; };
+		F016A7CA20CFC4D300CD63B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F016A7C920CFC4D300CD63B1 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17A9D2A0D4048D0C31BE2607 /* Pods-avlittle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-avlittle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-avlittle/Pods-avlittle.debug.xcconfig"; sourceTree = "<group>"; };
+		6169CD7FA5C29FDD10A14186 /* Pods-avlittle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-avlittle.release.xcconfig"; path = "Pods/Target Support Files/Pods-avlittle/Pods-avlittle.release.xcconfig"; sourceTree = "<group>"; };
+		6795066A04A6B646EC689AE7 /* libPods-avlittle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-avlittle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F016A7B720CFC4D100CD63B1 /* avlittle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avlittle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F016A7BA20CFC4D100CD63B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F016A7BB20CFC4D100CD63B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F016A7BD20CFC4D100CD63B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F016A7BE20CFC4D100CD63B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F016A7C120CFC4D100CD63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F016A7C320CFC4D300CD63B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F016A7C620CFC4D300CD63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F016A7C820CFC4D300CD63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F016A7C920CFC4D300CD63B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F016A7B420CFC4D100CD63B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC774B16C7E0BE1A90C4BDE /* libPods-avlittle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07DA8A249F2D34620162FBA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6795066A04A6B646EC689AE7 /* libPods-avlittle.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A29C57F540B1490BD360B96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17A9D2A0D4048D0C31BE2607 /* Pods-avlittle.debug.xcconfig */,
+				6169CD7FA5C29FDD10A14186 /* Pods-avlittle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F016A7AE20CFC4D100CD63B1 = {
+			isa = PBXGroup;
+			children = (
+				F016A7B920CFC4D100CD63B1 /* avlittle */,
+				F016A7B820CFC4D100CD63B1 /* Products */,
+				6A29C57F540B1490BD360B96 /* Pods */,
+				07DA8A249F2D34620162FBA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F016A7B820CFC4D100CD63B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F016A7B720CFC4D100CD63B1 /* avlittle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F016A7B920CFC4D100CD63B1 /* avlittle */ = {
+			isa = PBXGroup;
+			children = (
+				F016A7BA20CFC4D100CD63B1 /* AppDelegate.h */,
+				F016A7BB20CFC4D100CD63B1 /* AppDelegate.m */,
+				F016A7BD20CFC4D100CD63B1 /* ViewController.h */,
+				F016A7BE20CFC4D100CD63B1 /* ViewController.m */,
+				F016A7C020CFC4D100CD63B1 /* Main.storyboard */,
+				F016A7C320CFC4D300CD63B1 /* Assets.xcassets */,
+				F016A7C520CFC4D300CD63B1 /* LaunchScreen.storyboard */,
+				F016A7C820CFC4D300CD63B1 /* Info.plist */,
+				F016A7C920CFC4D300CD63B1 /* main.m */,
+			);
+			path = avlittle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F016A7B620CFC4D100CD63B1 /* avlittle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F016A7CD20CFC4D300CD63B1 /* Build configuration list for PBXNativeTarget "avlittle" */;
+			buildPhases = (
+				53D92099694EDC8B6ADBC5E4 /* [CP] Check Pods Manifest.lock */,
+				F016A7B320CFC4D100CD63B1 /* Sources */,
+				F016A7B420CFC4D100CD63B1 /* Frameworks */,
+				F016A7B520CFC4D100CD63B1 /* Resources */,
+				FBC59C855F0BB1ABB58F1BC4 /* [CP] Embed Pods Frameworks */,
+				0C8ED4AEF66BA55E38DC9877 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = avlittle;
+			productName = avlittle;
+			productReference = F016A7B720CFC4D100CD63B1 /* avlittle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F016A7AF20CFC4D100CD63B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = dotEngine;
+				TargetAttributes = {
+					F016A7B620CFC4D100CD63B1 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = F016A7B220CFC4D100CD63B1 /* Build configuration list for PBXProject "avlittle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F016A7AE20CFC4D100CD63B1;
+			productRefGroup = F016A7B820CFC4D100CD63B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F016A7B620CFC4D100CD63B1 /* avlittle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F016A7B520CFC4D100CD63B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F016A7C720CFC4D300CD63B1 /* LaunchScreen.storyboard in Resources */,
+				F016A7C420CFC4D300CD63B1 /* Assets.xcassets in Resources */,
+				F016A7C220CFC4D100CD63B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C8ED4AEF66BA55E38DC9877 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-avlittle/Pods-avlittle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53D92099694EDC8B6ADBC5E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-avlittle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC59C855F0BB1ABB58F1BC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-avlittle/Pods-avlittle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F016A7B320CFC4D100CD63B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F016A7BF20CFC4D100CD63B1 /* ViewController.m in Sources */,
+				F016A7CA20CFC4D300CD63B1 /* main.m in Sources */,
+				F016A7BC20CFC4D100CD63B1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F016A7C020CFC4D100CD63B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F016A7C120CFC4D100CD63B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F016A7C520CFC4D300CD63B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F016A7C620CFC4D300CD63B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F016A7CB20CFC4D300CD63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F016A7CC20CFC4D300CD63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F016A7CE20CFC4D300CD63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A9D2A0D4048D0C31BE2607 /* Pods-avlittle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLKRLU8RPY;
+				INFOPLIST_FILE = avlittle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.dot.avlittle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F016A7CF20CFC4D300CD63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6169CD7FA5C29FDD10A14186 /* Pods-avlittle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLKRLU8RPY;
+				INFOPLIST_FILE = avlittle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.dot.avlittle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F016A7B220CFC4D100CD63B1 /* Build configuration list for PBXProject "avlittle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F016A7CB20CFC4D300CD63B1 /* Debug */,
+				F016A7CC20CFC4D300CD63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F016A7CD20CFC4D300CD63B1 /* Build configuration list for PBXNativeTarget "avlittle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F016A7CE20CFC4D300CD63B1 /* Debug */,
+				F016A7CF20CFC4D300CD63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F016A7AF20CFC4D100CD63B1 /* Project object */;
+}
