@@ -43,7 +43,8 @@
     TXLivePushConfig *pushconfig = [[TXLivePushConfig alloc] init];
     pushconfig.enableAEC = TRUE;
     pushconfig.videoEncodeGop = 1;
-    pushconfig.videoFPS = 24;
+    pushconfig.touchFocus = FALSE;
+    pushconfig.videoFPS = 15;
     
     pusher = [[TXLivePush alloc] initWithConfig:pushconfig];
     pusher.delegate = self;
@@ -54,14 +55,16 @@
     
     [pusher startPush:pushUrl];
     
-    pusherView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [self view].frame.size.width, [self view].frame.size.height)];
+    pusherView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/2)];
     
+    pusherView.backgroundColor = UIColor.blackColor;
     
+    pusherView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:pusherView];
     [pusher startPreview:pusherView];
     
     
-    playerView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)];
+    playerView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height/2, self.view.frame.size.width, self.view.frame.size.height/2)];
     
     [self.view addSubview:playerView];
     
