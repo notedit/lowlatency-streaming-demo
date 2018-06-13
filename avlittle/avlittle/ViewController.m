@@ -8,7 +8,23 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import <TXLivePush.h>
+#import <TXLivePlayer.h>
+#import <TXLiveSDKTypeDef.h>
+
+
+
+
+@interface ViewController () <TXLivePushListener, TXLivePlayListener>
+{
+    TXLivePush* pusher;
+    TXLivePlayer* player;
+    
+    UIView*   pusherView;
+    UIView*   playerView;
+    
+    NSString*  pushUrl;
+}
 
 @end
 
@@ -17,6 +33,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // random a pushUrl
+    
+    pushUrl = [NSString stringWithFormat:@"rtmp://101.201.141.179/live/%d", random()];
+    
+    NSLog(pushUrl);
+    
+    TXLivePushConfig *pushconfig = [[TXLivePushConfig alloc] init];
+    pushconfig.enableAEC = TRUE;
+    pushconfig.videoEncodeGop = 1;
+    pushconfig.videoFPS = 24;
+    
+    pusher = [[TXLivePush alloc] initWithConfig:pushconfig];
+    pusher.delegate = self;
+    
+    [pusher setVideoQuality:VIDEO_QUALITY_REALTIME_VIDEOCHAT
+              adjustBitrate:YES
+           adjustResolution:YES];
+    
+    [pusher startPush:pushUrl];
+    
+    pusherView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [self view].frame.size.width, [self view].frame.size.height)];
+    
+    
+    [self.view addSubview:pusherView];
+    [pusher startPreview:pusherView];
+    
+    
+    playerView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)];
+    
+    [self.view addSubview:playerView];
+    
+    player = [[TXLivePlayer alloc] init];
+    player.delegate = self;
+    
+    TXLivePlayConfig *playconfig = [[TXLivePlayConfig alloc] init];
+    playconfig.enableAEC = TRUE;
+    playconfig.rtmpChannelType = RTMP_CHANNEL_TYPE_PRIVATE;
+    
+    
+    [player setConfig:playconfig];
+    [player setupVideoWidget:CGRectMake(0, 0, 100, 100) containView:playerView insertIndex:0];
+    [player setRenderMode:RENDER_MODE_FILL_EDGE];
+    [player startPlay:pushUrl type:PLAY_TYPE_LIVE_RTMP_ACC];
+    
 }
 
 
@@ -24,6 +85,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+// delegate
+-(void) onPushEvent:(int)EvtID withParam:(NSDictionary*)param
+{
+    
+    NSLog(@"onPushEvent %d,  %@", EvtID,  param);
+}
+
+-(void) onNetStatus:(NSDictionary*) param
+{
+    NSLog(@"onNetStatus: %@", param);
+}
+
+
+-(void) onPlayEvent:(int)EvtID withParam:(NSDictionary*)param
+{
+    NSLog(@"onPlayEvent %d,  %@", EvtID, param);
+}
+
 
 
 @end

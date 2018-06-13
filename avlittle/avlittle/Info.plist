@@ -28,6 +28,12 @@
 	<array>
 		<string>arm64</string>
 	</array>
+    
+    <key>NSCameraUsageDescription</key>
+    <string> need to access your camera</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>need to access your microphone</string>
+    
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
