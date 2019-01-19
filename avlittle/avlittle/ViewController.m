@@ -45,7 +45,8 @@
     pushconfig.videoEncodeGop = 1;
     pushconfig.touchFocus = FALSE;
     pushconfig.videoFPS = 15;
-    
+    pushconfig.rtmpChannelType = RTMP_CHANNEL_TYPE_PRIVATE;
+
     pusher = [[TXLivePush alloc] initWithConfig:pushconfig];
     pusher.delegate = self;
     
@@ -74,7 +75,9 @@
     TXLivePlayConfig *playconfig = [[TXLivePlayConfig alloc] init];
     playconfig.enableAEC = TRUE;
     playconfig.rtmpChannelType = RTMP_CHANNEL_TYPE_PRIVATE;
-    
+    playconfig.cacheTime = 0.3;
+    playconfig.minAutoAdjustCacheTime = 0.1;
+    playconfig.maxAutoAdjustCacheTime = 0.4;
     
     [player setConfig:playconfig];
     [player setupVideoWidget:CGRectMake(0, 0, 100, 100) containView:playerView insertIndex:0];
