@@ -1,12 +1,16 @@
 PODS:
-  - TXLiteAVSDK_Smart (4.5.4018)
+  - TXLiteAVSDK_Smart (5.4.6097)
 
 DEPENDENCIES:
   - TXLiteAVSDK_Smart
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - TXLiteAVSDK_Smart
+
 SPEC CHECKSUMS:
-  TXLiteAVSDK_Smart: d9e2c6f0e3b3355963eceb344b1ad946e6319caf
+  TXLiteAVSDK_Smart: c61b30ccdf85eb2dc2b5f35dd1c19a7598cc7728
 
 PODFILE CHECKSUM: 26e8e0df9441a85f17f03ce281b7569eec194895
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.5.3
